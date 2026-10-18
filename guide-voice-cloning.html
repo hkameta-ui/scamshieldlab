@@ -8,9 +8,18 @@
   <meta name="description" content="Comprehensive technical guide on how AI voice cloning scams operate, how 3-second audio samples bypass human perception, and proven out-of-band protocols to protect your family and organization.">
   <meta name="keywords" content="AI voice cloning scam, deepfake audio detection, vishing emergency scam, fake kidnap scam AI, voice biometrics fraud, out of band verification">
   
+  <!-- Security Standards Compliance (Rule 2) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- Performance Preconnect (Rule 1) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
-  <script src="config.js"></script>
+  <script src="config.js" defer></script>
 
   <style>
     .article-container {
@@ -84,11 +93,14 @@
 </head>
 <body>
 
+  <!-- Universal Accessibility Skip Link (Rule 4) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <!-- Site Header -->
   <header class="site-header">
     <div class="container nav-inner">
-      <a href="index.html" class="brand-logo">
-        <img src="assets/images/logo.jpg" alt="ScamShield AI" class="brand-icon">
+      <a href="index.html" class="brand-logo" aria-label="ScamShield AI Home">
+        <img src="assets/images/logo.jpg" alt="ScamShield AI Logo" class="brand-icon" width="38" height="38" decoding="async">
         <span>ScamShield<span style="color: var(--color-primary)">.AI</span></span>
       </a>
       <div class="nav-actions">
@@ -97,7 +109,7 @@
     </div>
   </header>
 
-  <main class="article-container">
+  <main class="article-container" id="main-content">
     <!-- Breadcrumb -->
     <div style="font-size: 0.85rem; color: var(--text-faint); margin-bottom: 1.25rem;">
       <a href="index.html">Home</a> &gt; <a href="index.html#guides">Threat Research</a> &gt; <span>AI Voice Cloning Defense</span>
@@ -118,7 +130,7 @@
         </div>
       </header>
 
-      <img src="assets/images/deepfake.jpg" alt="Neural Audio Waveform to Synthetic Human Face Synthesis" class="article-featured-img">
+      <img src="assets/images/deepfake.jpg" alt="Neural Audio Waveform to Synthetic Human Face Synthesis" class="article-featured-img" width="860" height="440" decoding="async">
 
       <!-- AdSense Slot Inside Guide -->
       <div class="adsense-slot-container" style="margin: 1.5rem 0 2.5rem;">

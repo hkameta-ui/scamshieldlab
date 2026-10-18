@@ -6,9 +6,18 @@
   <title>Privacy Policy | ScamShield AI</title>
   
   <meta name="description" content="ScamShield AI Privacy Policy. Learn how we handle information, cookies, Google AdSense advertising, and user privacy rights.">
+  <!-- Security Standards Compliance (Rule 2) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- Performance Preconnect (Rule 1) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
-  <script src="config.js"></script>
+  <script src="config.js" defer></script>
 
   <style>
     .legal-container {
@@ -53,11 +62,14 @@
 </head>
 <body>
 
+  <!-- Universal Accessibility Skip Link (Rule 4) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <!-- Site Header -->
   <header class="site-header">
     <div class="container nav-inner">
-      <a href="index.html" class="brand-logo">
-        <img src="assets/images/logo.jpg" alt="ScamShield AI" class="brand-icon">
+      <a href="index.html" class="brand-logo" aria-label="ScamShield AI Home">
+        <img src="assets/images/logo.jpg" alt="ScamShield AI Logo" class="brand-icon" width="38" height="38" decoding="async">
         <span>ScamShield<span style="color: var(--color-primary)">.AI</span></span>
       </a>
       <div class="nav-actions">
@@ -66,7 +78,7 @@
     </div>
   </header>
 
-  <main class="legal-container">
+  <main class="legal-container" id="main-content">
     <div style="font-size: 0.85rem; color: var(--text-faint); margin-bottom: 1.25rem;">
       <a href="index.html">Home</a> &gt; <span>Privacy Policy</span>
     </div>

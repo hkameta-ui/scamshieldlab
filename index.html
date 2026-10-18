@@ -18,14 +18,26 @@
   <meta property="og:image" content="assets/images/hero.jpg">
   <meta property="og:url" content="https://scamshield-ai.com">
 
+  <!-- Security Standards Compliance (Rule 2) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- Performance Preconnect (Rule 1) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
 
   <!-- Configuration & AdSense Loader -->
-  <script src="config.js"></script>
+  <script src="config.js" defer></script>
 </head>
 <body>
+
+  <!-- Universal Accessibility Skip Link (Rule 4) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <!-- Top Real-Time Threat Alert Ticker -->
   <aside class="site-ticker" aria-label="Live Threat Ticker">
@@ -41,7 +53,7 @@
   <header class="site-header">
     <div class="container nav-inner">
       <a href="index.html" class="brand-logo" aria-label="ScamShield AI Home">
-        <img src="assets/images/logo.jpg" alt="ScamShield AI Logo" class="brand-icon">
+        <img src="assets/images/logo.jpg" alt="ScamShield AI Logo" class="brand-icon" width="38" height="38" decoding="async">
         <span>ScamShield<span style="color: var(--color-primary)">.AI</span></span>
       </a>
 
@@ -64,7 +76,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
     <!-- Top Responsive AdSense Slot -->
     <div class="container adsense-slot-container" id="adSlotHeader">
       <span class="ad-label">Advertisement</span>
@@ -110,7 +122,7 @@
 
         <div class="hero-visual-col">
           <div class="hero-visual-card">
-            <img src="assets/images/hero.jpg" alt="ScamShield AI Neural Network Cyber Defense Architecture" class="hero-img">
+            <img src="assets/images/hero.jpg" alt="ScamShield AI Neural Network Cyber Defense Architecture" class="hero-img" width="640" height="360" decoding="async">
             <div class="hero-visual-overlay">
               <div class="overlay-status">
                 <span class="live-dot"></span>
@@ -377,7 +389,7 @@
           <!-- Guide 1 -->
           <article class="guide-card">
             <div class="guide-thumb-wrap">
-              <img src="assets/images/deepfake.jpg" alt="AI Voice Cloning Waveform and Facial Wireframe Analysis" class="guide-thumb">
+              <img src="assets/images/deepfake.jpg" alt="AI Voice Cloning Waveform and Facial Wireframe Analysis" class="guide-thumb" width="400" height="200" loading="lazy" decoding="async">
               <span class="guide-read-time">8 Min Read</span>
             </div>
             <div class="guide-card-content">
@@ -393,7 +405,7 @@
           <!-- Guide 2 -->
           <article class="guide-card">
             <div class="guide-thumb-wrap">
-              <img src="assets/images/hero.jpg" alt="Autonomous AI Operations and Pig Butchering Networks" class="guide-thumb">
+              <img src="assets/images/hero.jpg" alt="Autonomous AI Operations and Pig Butchering Networks" class="guide-thumb" width="400" height="200" loading="lazy" decoding="async">
               <span class="guide-read-time">10 Min Read</span>
             </div>
             <div class="guide-card-content">
