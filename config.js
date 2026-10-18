@@ -6,9 +6,9 @@
  */
 
 window.SITE_CONFIG = {
-  siteName: "ScamShield AI",
-  siteUrl: "https://scamshield-ai.com", // update with your live domain
-  supportEmail: "security@scamshield-ai.com",
+  siteName: "ScamShield Lab",
+  siteUrl: "https://scamshieldlab.com",
+  supportEmail: "security@scamshieldlab.com",
 
   // --- GOOGLE ADSENSE MONETIZATION SETTINGS ---
   adsense: {
